@@ -1,0 +1,16 @@
+name: VeyrionHUD
+version: 1.0.0
+main: id.veyrion.hud.VeyrionHud
+api-version: '1.21'
+depend: [AwakeningCutscene]
+softdepend: [PlaceholderAPI, BetterHud, ItemsAdder, Vault]
+description: HUD kanan-atas Veyrion Roleplay (tanggal/jam WIB, online, ras dari AwakeningCutscene, uang)
+commands:
+  veyrionhud:
+    description: Admin command VeyrionHUD
+    usage: /veyrionhud <reload|race|setrace|pack>
+    aliases: [vhud]
+permissions:
+  veyrionhud.admin:
+    description: Boleh pakai /veyrionhud
+    default: op

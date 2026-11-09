@@ -1,0 +1,38 @@
+# ===== VeyrionHUD =====
+# Semua angka layout dalam "GUI pixel" -> otomatis ikut skala di GUI Scale berapa pun.
+# HUD nempel ke KANAN layar (shader), jadi sama persis di semua GUI Scale & resolusi.
+
+# Mode HUD: default = BetterHud (pakai placeholder %veyrion_*%).
+# true = mode lama: bossbar + shader (ItemsAdder/resource pack). Jangan nyalakan dua-duanya.
+bossbar-hud:
+  enabled: false
+
+timezone: "Asia/Jakarta"
+date-format: "dd/MM/yyyy"
+time-format: "HH:mm 'WIB'"
+
+players-label: "Players"     # tampil: "45 Players"
+no-race-text: "-"            # kalau player belum punya ras
+money-format: "$#,##0"       # Vault (opsional). Tanpa Vault -> $0
+
+update-ticks: 20
+
+layout:
+  margin-right: 22   # jarak dari tepi kanan layar
+  logo-center-y: 58  # titik tengah logo V & judul dari atas layar
+  logo-title-gap: 4
+  row-start-y: 100   # titik tengah baris pertama (tanggal/jam)
+  row-height: 18     # jarak antar baris
+  text-icon-gap: 3   # jarak teks -> ikon
+  group-gap: 6       # jarak antar grup di baris tanggal/jam
+
+# Kalau pakai ItemsAdder, BIARKAN enabled: false (pack dikirim ItemsAdder).
+# Resource pack standalone (opsional, tanpa ItemsAdder). Upload VeyrionHUD-ResourcePack.zip ke hosting
+# direct-link, lalu isi url + sha1. Kalau kosong, pack harus dikirim lewat cara lain
+# (server.properties resource-pack=...).
+resource-pack:
+  enabled: false
+  url: ""
+  sha1: ""
+  required: true
+  prompt: "Resource pack Veyrion Roleplay (HUD)"
